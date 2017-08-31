@@ -16,6 +16,10 @@ RUN echo "===> Installing sudo to emulate normal OS behavior..."  && \
     apk --update add sudo                                         && \
     \
     \
+    echo "===> Adding git..."  && \
+    apk --update add git && \
+    \
+    \
     echo "===> Adding Python runtime..."  && \
     apk --update add python py-pip openssl ca-certificates    && \
     apk --update add --virtual build-dependencies \
